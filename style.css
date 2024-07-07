@@ -36,6 +36,11 @@ header .logo h1{
     padding: 0px 50px;
 }
 
+
+header .logo h1:hover{
+    cursor: pointer;
+}
+
 header nav a{
     text-decoration: none;
     color: white;
@@ -97,12 +102,59 @@ header nav a:hover{
 main{
     background-color: white;
     max-width: 1200px;
-    height: auto;
+    height: 100vh;
     margin: auto;
     
 }
 
+/*EDIÇÃO DO CARROSSEL*/
 
+.carousel { 
+    padding-top: 5px;
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/*FIM DO CARROSSEL*/
 
 footer p{
     text-align: center;
