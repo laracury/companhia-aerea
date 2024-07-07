@@ -104,8 +104,21 @@ main{
     max-width: 1200px;
     height: 100vh;
     margin: auto;
-    
+    padding: 10px;
 }
+main h1{
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    font-size: 2rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.212);
+}
+main p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2rem;
+    text-indent: 30px;
+    text-align: justify;
+ }
 
 /*EDIÇÃO DO CARROSSEL*/
 
@@ -113,11 +126,12 @@ main{
     padding-top: 5px;
     position: relative;
     width: 80%;
-    max-width: 700px;
+    max-width: 600px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .carousel-inner {
@@ -155,6 +169,40 @@ main{
 }
 
 /*FIM DO CARROSSEL*/
+
+.pay{
+    display: flex;
+    margin-top: 50px;
+}
+
+.image{
+    width: 50%;
+    height: auto;
+}
+
+.image img{
+    width: 80%;
+}
+
+.descricao{
+    width: 50%;
+    height: auto;
+}
+
+.descricao h1, h2{
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.descricao p{
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+.depoiments{
+    display: grid;
+}
 
 footer p{
     text-align: center;
