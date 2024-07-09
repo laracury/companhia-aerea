@@ -102,7 +102,7 @@ header nav a:hover{
 main{
     background-color: white;
     max-width: 1200px;
-    height: 100vh;
+    height: auto;
     margin: auto;
     padding: 10px;
 }
@@ -200,12 +200,50 @@ main p{
     padding: 0px 20px;
 }
 
-.depoiments{
-    display: grid;
+.avaliacao{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.avaliacao .person{
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.avaliacao .person img{
+    width: 250px;
+    height: 250px;
+    border: 6px solid var(--cor05);
+    border-radius: 50%;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.37);
+}
+
+.comentario h2, p{
+    padding: 0px 30px;
+    text-indent: 30px;
+}
+
+.votos{
+    margin-top: 10px;
+}
+
+.votos ion-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.votos ion-icon:hover{
+    color: yellow;
 }
 
 footer p{
     text-align: center;
     background-color: var(--cor05);
     color: white;
+    height: 30px;
+    padding-top: 5px;
 }
